@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lumenfall — a neon arena shooter</title>
+    <meta
+      name="description"
+      content="Lumenfall: survive 10 waves of the void, break the Warden, and keep the light. A neon arena shooter that runs entirely in your browser."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #070a18;
+        color: #eaf2ff;
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+      }
+      header {
+        width: min(1280px, 100%);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #5ef2ff;
+      }
+      header p {
+        margin: 0;
+        color: #8ea3c0;
+        font-size: 14px;
+      }
+      #game {
+        width: min(1280px, 100%);
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        background: #070a18;
+        border: 1px solid rgba(94, 242, 255, 0.25);
+        border-radius: 12px;
+        touch-action: none;
+        cursor: crosshair;
+      }
+      #status {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      footer {
+        width: min(1280px, 100%);
+        color: #8ea3c0;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      footer kbd {
+        background: #16213a;
+        border: 1px solid #2b3d63;
+        border-bottom-width: 2px;
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-family: inherit;
+        color: #eaf2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Lumenfall</h1>
+      <p>Survive 10 waves. Break the Warden. Keep the light.</p>
+    </header>
+    <canvas id="game" width="1280" height="720" aria-label="Lumenfall game canvas"></canvas>
+    <p id="status" role="status" aria-live="polite"></p>
+    <footer>
+      <strong>How to play:</strong> <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys fly,
+      mouse aims, hold the left mouse button (or <kbd>Space</kbd>) to fire,
+      <kbd>Space</kbd> dashes through danger, <kbd>P</kbd> pauses, <kbd>M</kbd> mutes.
+      Chain kills to raise your combo; grab hearts, shields, triple shot and
+      overcharge. Bosses guard waves 5 and 10 — clear wave 10 to win, then
+      endless mode begins.
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
