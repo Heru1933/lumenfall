@@ -1,8 +1,8 @@
 # lumenfall
 
 [![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
-[![rank](https://make.fun/badge/best-game-01/yayanjatni/lumenfall/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
-[![reward](https://make.fun/badge/best-game-01/yayanjatni/lumenfall/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/Heru1933/lumenfall/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/Heru1933/lumenfall/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
 Lumenfall is a neon top-down arena shooter: survive 10 escalating waves of voidborn, break the Warden bosses guarding waves 5 and 10, chain kills into a combo multiplier, and keep going in endless mode. WASD/arrows fly, mouse aims, hold click to fire, Space dashes through danger. Synthesised WebAudio sound, procedural glow art, and no libraries or network loads.
 
